@@ -343,3 +343,11 @@ main(){
 
 
 
+clc;
+close all;
+clear all;
+p=(.01: .01: 1);
+H=p.*log2(1./p)+(1-p).*log2(1./(1-p));
+plot(p, H);
+
+
